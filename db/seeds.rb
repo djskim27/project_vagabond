@@ -15,6 +15,9 @@ losangeles = City.create(name: 'Los Angeles', country: "United States", img_url:
 sydney = City.create(name: 'Sydney', country: "Australia", img_url: "http://www.remotetraveler.com/wp-content/gallery/sydney-harbour-bridge/Sydney-Harbour-Bridge-in-the-background.jpg")
 
 atl_post_1 = Post.create(title: 'Met Some Dude Named Dirty Mike', content: 'He would not stop talking about his lizards and tropical frogs.')
+atl_post_2 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
 atlanta.posts = [
-    atl_post_1 
+    atl_post_1,
+    atl_post_2
 ]
+
