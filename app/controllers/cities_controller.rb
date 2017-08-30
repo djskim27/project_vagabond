@@ -5,6 +5,6 @@ class CitiesController < ApplicationController
 
   def show
     @city = City.find params[:id]
-    @city_posts = @city.posts
+    @city_posts = @city.posts.sort.reverse
   end
 end
