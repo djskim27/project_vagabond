@@ -11,3 +11,8 @@ Post.destroy_all
 atlanta = City.create(name: 'Atlanta', country: "United States", img_url: "http://www.marketoneinstitutional.com/wp-content/uploads/2015/04/M1-background.jpg")
 sanfrancisco = City.create(name: 'San Francisco', country: "United States", img_url: "http://www.twitrcovers.com/wp-content/uploads/2013/12/Oakland-Bay-San-Francisco-l.jpg")
 london = City.create(name: 'London', country: "United Kingdom", img_url: "http://www.centrallondonrents.com/wp-content/uploads/2015/02/london_background.jpg")
+
+atl_post_1 = Post.create(title: 'Met Some Dude Named Dirty Mike', content: 'He would not stop talking about his lizards and tropical frogs.')
+atlanta.posts = [
+    atl_post_1 
+]

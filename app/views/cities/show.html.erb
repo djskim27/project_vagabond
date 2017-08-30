@@ -1,3 +1,12 @@
 
 <h1 class='city-show-name'><%= @city.name%></h1>
 <%= image_tag @city.img_url, :style => 'width: 100%'%>
+<h3>Posts<h3>
+<ul>
+<% @city_posts.each do |post| %>
+    <li>
+        <h4><%=link_to post.title, post_path(post)%></h4>
+       <%=post.content%>
+    </li>
+<%end%>
+</ul>
