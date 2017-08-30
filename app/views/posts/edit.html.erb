@@ -2,4 +2,6 @@
 
 <%= render "partials/form"%>
 
-
+<%= form_for [@city, @post], method: :delete do |f|%>
+  <%= f.submit "Delete", class: "delete" %>
+<% end %>
