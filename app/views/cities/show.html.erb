@@ -1,11 +1,11 @@
 
 <h1 class='city-show-name'><%= @city.name%></h1>
 <%= image_tag @city.img_url, :style => 'width: 100%'%>
-<h3>Posts <%=link_to '(+)', new_post_path%><h3>
+<h3>Posts <%=link_to '(+)', new_city_post_path(@city)%><h3>
 <ul>
 <% @city_posts.each do |post| %>
     <li>
-        <h4><%=link_to post.title, post_path(post)%></h4>
+        <h4><%=link_to post.title, city_post_path(post)%></h4>
        <%=post.content%>
     </li>
 <%end%>
