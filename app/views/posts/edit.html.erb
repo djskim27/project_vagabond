@@ -3,5 +3,6 @@
 <%= render "partials/form"%>
 
 <%= form_for [@city, @post], method: :delete do |f|%>
-  <%= f.submit "Delete", class: "delete" %>
+  <%= f.submit "Delete", class: "delete", data: {confirm: "Are you sure?"} %>
 <% end %>
+
