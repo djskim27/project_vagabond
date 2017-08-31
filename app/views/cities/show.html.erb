@@ -1,7 +1,7 @@
 
 <div class='city-show-container'>
-<h1 class='city-show-name text-center'><%= @city.name.split.map(&:capitalize).join(' ')%></h1>
 <%= image_tag @city.img_url, style: 'width: 100%'%>
+<h1 class='city-show-name text-center'><%= @city.name.split.map(&:capitalize).join(' ')%></h1>
 <h3 class='text-center'>Posts <%=link_to '(+)', new_city_post_path(@city)%><h3>
 <div class='text-center'>
 <% @city_posts.each do |post| %>

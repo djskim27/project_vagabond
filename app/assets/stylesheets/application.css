@@ -14,6 +14,7 @@
  *= require_tree .
  */
  
+ 
 
  .city-container {
      display: flex;
@@ -25,11 +26,29 @@
     
  }
 
- .city-show-container{
-     
- }
-
+.city-image-div {
+    height: 250px;
+}
  .post-div {
      display: flex;
      justify-content: center;
  }
+
+#custom-navbar {
+     background: rgba(30, 29, 29, 0.80);
+     height: 40px
+     
+     
+ }
+
+ #custom-navbar-brand {
+     font-size: 15px;
+     padding: 10px;
+    
+ }
+
+ #custom-toggle {
+     height: 25px;
+ }
+
+
