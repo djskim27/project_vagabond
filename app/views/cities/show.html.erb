@@ -6,7 +6,7 @@
 <% @city_posts.each do |post| %>
     <li>
         <h4><%=link_to post.title, city_post_path(@city, post)%></h4>
-       <%=post.content%>
+       <h6><%=truncate(post.content, length: 50)%></h6>
     </li>
 <%end%>
 </ul>
