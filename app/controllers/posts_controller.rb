@@ -12,10 +12,20 @@ class PostsController < ApplicationController
 
   def create
     @city = City.friendly.find(params[:city_id])
-    @post = @city.posts.create!(post_params)
-    
+    @post = @city.posts.new(post_params)
+    if @post.valid?
+      @post.save
+      redirect_to city_path(@city)
+    elsif @post.title.length > 200
+      flash.alert = "You have exceeded the 200 character limit for post title"
+      redirect_to new_city_post_path
+    else
+      flash.alert = "You cannot have a blank title or blank content for your post"
+      redirect_to new_city_post_path
+    end
 
-    redirect_to city_path(@city)
+
+    
   end
 
   def edit

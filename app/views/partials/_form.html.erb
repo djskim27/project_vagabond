@@ -1,7 +1,18 @@
+
 <%= form_for [@city, @post] do |f|%>
+ <div>
   <%= f.label :title %>
+</div>
+<div>
   <%= f.text_field :title %>
+</div>
+<div>
   <%= f.label :content %>
-  <%= f.text_area :content, size: '20x10'%>
+</div>
+<div>
+  <%= f.text_area :content, size: '19x5'%>
+</div>
   <%= f.submit %>
 <% end %>
+
+
