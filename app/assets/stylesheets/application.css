@@ -20,6 +20,21 @@
      display: flex;
      justify-content: center;
  }
+ .city-show-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.post-div {
+    display: flex;
+    flex-direction: column;
+}
+.post-show-div{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
  .city {
      display: inline-block;
      margin: 0 20px 0 20px;

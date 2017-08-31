@@ -1,3 +1,7 @@
-<h3><%=@post.title%></h3>
-<p><%=@post.content%></p>
-<%= link_to "(Edit Post)", edit_city_post_path(@city,@post) %>
+<div class='post-show-div text-center'>
+    <h3><%=@post.title%></h3>
+    <h6><%=distance_of_time_in_words(@post.created_at, Time.now)%> ago</h6>
+    <p><%=@post.content%></p>
+    <%= link_to "(Edit Post)", edit_city_post_path(@city,@post) %>
+</div>
+    
