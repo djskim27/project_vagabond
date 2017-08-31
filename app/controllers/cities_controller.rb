@@ -4,7 +4,7 @@ class CitiesController < ApplicationController
   end
 
   def show
-    @city = City.find params[:id]
+    @city = City.friendly.find params[:id]
     @city_posts = @city.posts.sort.reverse
   end
 end

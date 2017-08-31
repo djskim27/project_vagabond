@@ -1,5 +1,5 @@
 
-<h1 class='city-show-name'><%= @city.name%></h1>
+<h1 class='city-show-name'><%= @city.name.split.map(&:capitalize).join(' ')%></h1>
 <%= image_tag @city.img_url, :style => 'width: 100%'%>
 <h3>Posts <%=link_to '(+)', new_city_post_path(@city)%><h3>
 <ul>
