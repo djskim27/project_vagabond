@@ -13,7 +13,7 @@
  *= require_self 
  *= require_tree .
  */
-
+ 
 
  .city-container {
      display: flex;
@@ -26,5 +26,10 @@
  }
 
  .city-show-container{
-     margin-top: 5%;
+     
+ }
+
+ .post-div {
+     display: flex;
+     justify-content: center;
  }

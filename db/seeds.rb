@@ -9,9 +9,9 @@ City.destroy_all
 
 
 atlanta = City.create(name: 'atlanta', country: "United States", img_url: "http://www.marketoneinstitutional.com/wp-content/uploads/2015/04/M1-background.jpg")
-sanfrancisco = City.create(name: 'san francisco', country: "United States", img_url: "http://www.twitrcovers.com/wp-content/uploads/2013/12/Oakland-Bay-San-Francisco-l.jpg")
+sanfrancisco = City.create(name: 'san francisco', country: "United States", img_url: "http://i.imgur.com/fHhVpxp.png")
 london = City.create(name: 'london', country: "United Kingdom", img_url: "http://www.centrallondonrents.com/wp-content/uploads/2015/02/london_background.jpg")
-losangeles = City.create(name: 'los angeles', country: "United States", img_url: "http://pacpet.com/wp-content/uploads/2016/10/Los-Angeles-background.jpg")
+losangeles = City.create(name: 'los angeles', country: "United States", img_url: "http://i.imgur.com/MEh5yqR.png")
 sydney = City.create(name: 'sydney', country: "Australia", img_url: "http://www.remotetraveler.com/wp-content/gallery/sydney-harbour-bridge/Sydney-Harbour-Bridge-in-the-background.jpg")
 
 atl_post_1 = Post.create(title: 'Met Some Dude Named Dirty Mike', content: 'He would not stop talking about his lizards and tropical frogs.')
