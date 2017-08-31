@@ -6,7 +6,8 @@
 <% @city_posts.each do |post| %>
     <li>
         <h4><%=link_to post.title, city_post_path(@city, post)%></h4>
-       <h6><%=truncate(post.content, length: 50)%></h6>
+        <h6><%=distance_of_time_in_words(post.created_at, Time.now)%> ago</h6>
+       <h6><%=truncate(post.content, length: 50)%> <%=link_to "Read More", city_post_path(@city, post)%></h6>
     </li>
 <%end%>
 </ul>
