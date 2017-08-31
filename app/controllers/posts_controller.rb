@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
- 
+  #before_action :set_post, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource only: [:edit, :update, :destroy]
   def show
     @city = City.friendly.find(params[:city_id])
     @post = @city.posts.find(params[:id])
@@ -12,6 +13,7 @@ class PostsController < ApplicationController
 
   def create
     @city = City.friendly.find(params[:city_id])
+   
     @post = @city.posts.new(post_params)
     if @post.valid?
       @post.save
@@ -23,7 +25,6 @@ class PostsController < ApplicationController
       flash.alert = "You cannot have a blank title or blank content for your post"
       redirect_to new_city_post_path
     end
-
 
     
   end
@@ -53,6 +54,9 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :content, :city_id)
+    post = params.require(:post).permit(:title, :content)
+    user_id = { user_id: current_user.id}
+    post.merge(user_id)
+
   end
 end

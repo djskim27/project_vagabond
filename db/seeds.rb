@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 City.destroy_all
+User.destroy_all
+
 
 
 atlanta = City.create(name: 'atlanta', country: "United States", img_url: "http://i.imgur.com/Q0K2rZq.png")
@@ -14,36 +16,5 @@ london = City.create(name: 'london', country: "United Kingdom", img_url: "https:
 losangeles = City.create(name: 'los angeles', country: "United States", img_url: "http://i.imgur.com/MEh5yqR.png")
 sydney = City.create(name: 'sydney', country: "Australia", img_url: "http://www.remotetraveler.com/wp-content/gallery/sydney-harbour-bridge/Sydney-Harbour-Bridge-in-the-background.jpg")
 
-atl_post_1 = Post.create(title: 'Met Some Dude Named Dirty Mike', content: 'He would not stop talking about his lizards and tropical frogs.')
-atl_post_2 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_3 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_4 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_5 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_6 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_7 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_8 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_9 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_10 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_11 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_12 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_13 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
-atl_post_14 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
 
-atlanta.posts = [
-    atl_post_1,
-    atl_post_2,
-    atl_post_3,
-    atl_post_4,
-    atl_post_5,
-    atl_post_6,
-    atl_post_7,
-    atl_post_8,
-    atl_post_9,
-    atl_post_10,
-    atl_post_11,
-    atl_post_12,
-    atl_post_13,
-    atl_post_14,
-
-]
 
