@@ -43,10 +43,21 @@
 
 .city-image-div {
     height: 250px;
+
+}
+.city-user-post {
+    display: flex;
+
 }
  .post-div {
      display: flex;
      justify-content: center;
+     margin: 10px;
+ }
+
+ .post-user {
+     margin: 10px;
+     text-align: center;
  }
 
 #custom-navbar {
