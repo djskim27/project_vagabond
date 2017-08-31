@@ -24,8 +24,13 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-      <button type="button" class="btn btn-default navbar-btn-sm">Sign Up</button>
-      <button type="button" class="btn btn-default navbar-btn-sm">Log In</button>
+       <% if user_signed_in? %>
+     Logged in as <strong><%= current_user.email %></strong>.
+     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+   <% else %>
+     <%= link_to "Sign up", new_user_registration_path %> |
+     <%= link_to "Login", new_user_session_path  %>
+   <% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -33,5 +38,8 @@
 <% if flash.alert %>
 <div class="alert"><%=flash.alert%></div>
 <%end%>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
   </body>
 </html>
+
