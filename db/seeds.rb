@@ -16,8 +16,34 @@ sydney = City.create(name: 'sydney', country: "Australia", img_url: "http://www.
 
 atl_post_1 = Post.create(title: 'Met Some Dude Named Dirty Mike', content: 'He would not stop talking about his lizards and tropical frogs.')
 atl_post_2 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_3 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_4 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_5 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_6 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_7 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_8 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_9 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_10 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_11 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_12 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_13 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+atl_post_14 = Post.create(title: 'Got Some Lemon Pepper Wings', content: 'They were DANK. 10/10 would bang.')
+
 atlanta.posts = [
     atl_post_1,
-    atl_post_2
+    atl_post_2,
+    atl_post_3,
+    atl_post_4,
+    atl_post_5,
+    atl_post_6,
+    atl_post_7,
+    atl_post_8,
+    atl_post_9,
+    atl_post_10,
+    atl_post_11,
+    atl_post_12,
+    atl_post_13,
+    atl_post_14,
+
 ]
 
