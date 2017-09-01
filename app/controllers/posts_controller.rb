@@ -49,7 +49,7 @@ class PostsController < ApplicationController
     @post = @city.posts.find(params[:id])
     @post.destroy
 
-    redirect_to city_path(@city)
+    redirect_to users_show_path
   end
 
 

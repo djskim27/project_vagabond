@@ -68,10 +68,17 @@
 }
 .city-user-post {
    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    color: white;
 
 }
+.city-user-row-post {
+	display: flex;
+	color: white;
 
+}
 .post-div {
 	display: flex;
 	justify-content: center;
