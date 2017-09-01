@@ -32,22 +32,11 @@
     font-family: 'Cabin', sans-serif;
  }
  
-
-#custom-navbar {
-     background: rgba(30, 29, 29, 0.80);
-     height: 40px
-     
-     
- }
-
- #custom-navbar-brand {
-     font-size: 15px;
-     padding: 10px;
+ .navbar-brand {
+     font-size: 30px;
+     margin-top: -5px;
+     margin-bottom:-5px;
     
- }
-
- #custom-toggle {
-     height: 25px;
  }
 
  .form-container {
@@ -74,6 +63,36 @@
     border-top: 3px solid #990303;
     
 }
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 780px) { 
+    .front-page-font {
+        font-family: 'Indie Flower', cursive;
+        font-size: 10px;
+        text-shadow: 2px 2px 7px black;
+     }
+
+     .navbar {
+         width: 100%;
+     }
+
+     .link-text {
+        text-decoration: underline overline;
+        text-decoration-color: #990303;
+        font-family: 'Cabin', sans-serif;
+        font-size: 20px;
+        color: white;
+        background: rgba(0,0,0,0);
+        display: block;
+    }
+    
+    .link-text:hover {
+        font-family: 'Cabin', sans-serif;
+        font-size: 25px;
+        color: white;
+        background:#990303;
+        display: block;
+    }
+ }
 
  @import "font-awesome-sprockets";
  @import "font-awesome";
