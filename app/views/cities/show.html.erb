@@ -7,9 +7,8 @@
 <div>
 <h3 class='text-center'>Posts <%=link_to '(+)', new_city_post_path(@city)%><h3>
 </div>
-<div>
-<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=1&markers=#{@city.latitude}%2C#{@city.longitude}" %>
-</div>
+
+
 <div class='city-user-post'>
 <% @city_posts.each do |post| %>
         <div class = 'post-user'>
