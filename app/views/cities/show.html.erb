@@ -22,7 +22,11 @@
                 <div class='city-user-row-post'>
                         <div class = 'post-user'>
                                 <div>
-                                        <%=image_tag @user.profile_pic_url, size: '60x60'%>
+                                        <%if @user.profile_pic_url == nil%>
+                                                <%=image_tag 'https://media.giphy.com/media/p32uriSNgeZxu/giphy.gif', size: '60x60'%>
+                                        <%else%>
+                                                <%=image_tag @user.profile_pic_url, size: '60x60'%>
+                                        <%end%>
                                 </div>
                                         <%= @user.username%>
                         </div>
@@ -44,3 +48,5 @@
 </div>
 
 </div>
+
+ 
