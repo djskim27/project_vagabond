@@ -56,6 +56,13 @@
    flex-direction: column;
 }
 
+.post-div-border {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid white;
+	border-radius: 10px;
+ }
+
 .city {
 	display: inline-block;
 	margin: 0 20px 0 20px;
@@ -72,6 +79,7 @@
    align-items: center;
    justify-content: center;
    color: white;
+  
 
 }
 

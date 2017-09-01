@@ -25,10 +25,9 @@
   <% end -%>
   
   <div class="actions d-flex justify-content-center">
-    <%= link_to new_user_session_path do%>
-  <%=button_tag 'Submit', class: 'btn link-text'%>
-<%end%>
+    <%= f.submit "Log In", class:'btn link-text'%>
   </div>
+
 <% end %>
 
 <%= render "devise/shared/links" %>

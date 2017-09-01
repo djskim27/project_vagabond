@@ -1,14 +1,14 @@
 <div class='d-flex justify-content-center'>
     
         <div class=' master-container'>
-               <h2 class='show-username d-inline'><%= "#{current_user.username}'s Post"%></h2>
+               <h2 class='show-username d-inline'><%=@users.find(@post.user_id).username%></h2>
             <div class = 'post-user d-flex justify-content-between'>
                    
                 <div>
-                    <%if current_user.profile_pic_url == nil%>
+                    <%if @users.find(@post.user_id).profile_pic_url == nil%>
                             <%=image_tag 'https://media.giphy.com/media/p32uriSNgeZxu/giphy.gif', size: '200x200', class:'shadow'%>
                     <%else%>
-                            <%=image_tag current_user.profile_pic_url, size: '200x200', class:'shadow'%>
+                            <%=image_tag @users.find(@post.user_id).profile_pic_url, size: '200x200', class:'shadow'%>
                     <%end%>
                 </div>
                             

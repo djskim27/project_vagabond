@@ -1,13 +1,13 @@
 <div class='overall-user-show-container'>
     <div class='post-show-container'>
         <div class='post-show-div text-center'>
-            <h3><%=@user.username%>'s Profile</h3>
+            <h3 class='show-username-title d-inline'><%=@user.username%>'s Profile</h3><br/>
             <%if @user.profile_pic_url == nil%>
                 <%=image_tag 'https://media.giphy.com/media/p32uriSNgeZxu/giphy.gif', size: '250x250', class:'profile-pic'%>
             <%else%>
                 <%=image_tag @user.profile_pic_url, size: '250x250'%>
             <%end%>
-            <h6>Joined at <%=@user.created_at%></h6>
+            <h6>Joined at <%=@user.created_at.to_date%></h6>
             <h6>Email: <%=@user.email%></h6>
             <%=link_to edit_user_registration_path do%>
             <button class='btn edit-user-btn'>Edit Profile</button>
@@ -18,10 +18,10 @@
 
         <div class='city-user-post'>
             <%@user_posts.each do |post| %>
-                <div class = 'post-div'>
+                <div class = 'post-div-border'>
                     
-                    <h3> <%=link_to post.title, city_post_path(post.city_id, post.id), class:'post-font'%> </h3>
-                    <h4>City: <%= @cities.find(post.city_id).name.split.map(&:capitalize).join(' ')%></h4>
+                    <h4> <%=link_to post.title, city_post_path(post.city_id, post.id), class:'post-font'%> </h3>
+                    <h5>City: <%= @cities.find(post.city_id).name.split.map(&:capitalize).join(' ')%></h4>
                     <h6><%=truncate(post.content, length: 50)%> <%=link_to "Read More", city_post_path(post.city_id, post.id), class:'time-color'%></h6>
                     <div class='button-container'>
                         <%=link_to edit_city_post_path(post.city_id, post.id) do%> 

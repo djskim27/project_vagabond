@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   def show
     @city = City.friendly.find(params[:city_id])
     @post = @city.posts.find(params[:id])
+    @users = User.all
     
   end
 
