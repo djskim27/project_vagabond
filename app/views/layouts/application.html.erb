@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ProjectVagabond</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Cabin|Open+Sans+Condensed:300" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-  <nav class="navbar-inverse navbar-default navbar-fixed-top" id='custom-navbar'>
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id='custom-toggle'> 
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        
+    <nav class="navbar navbar-expand-lg navbar-dark" style='background: rgba(153, 3, 3, 0.8)'>
+      <a class="navbar-brand brand-font hover-nav " href="/"> <%=icon('plane', class: 'strong')%> RoamR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" id='custom-navbar-brand'href="/">Project Vagabond</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-       <% if user_signed_in? %>
-     <%= link_to "My Profile", users_show_path  %> 
-     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-   <% else %>
-     <%= link_to "Sign up", new_user_registration_path %> |
-     <%= link_to "Login", new_user_session_path  %>
-   <% end %>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+        <% if user_signed_in? %>
+          <li class="nav-item active">
+            <%= link_to current_user.username, users_show_path, class: 'nav-link default-font hover-nav'  %> <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'nav-link default-font hover-nav' %><span class="sr-only">(current)</span>
+          </li>
+          <% else %>
+          <li class="nav-item active">
+            <%= link_to "Sign up", new_user_registration_path, class: 'nav-link default-font hover-nav' %> <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item active">
+            <%= link_to "Login", new_user_session_path, class: 'nav-link default-font hover-nav' %><span class="sr-only">(current)</span>
+          </li>
+        <% end %>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
-<% if flash.alert %>
-<div class="alert"><%=flash.alert%></div>
-<%end%>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/c331e8be0e.js"></script>
+
   </body>
 </html>
 

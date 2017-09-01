@@ -1,18 +1,20 @@
+<div class='form-font'>
+  <%= form_for [@city, @post] do |f|%>
+  <div class="form-group">
+    <%= f.label :title %>
+  
+    <%= f.text_field :title, class:'form-control' %>
+  </div>
+  <div>
+    <%= f.label :content %>
+  </div>
+  <div>
+    <%= f.text_area :content, class:'form-control',size: '19x5'%>
+  </div>
+  <br/>
+    <%= f.submit class:'btn link-text'%>
+  <% end %>
 
-<%= form_for [@city, @post] do |f|%>
- <div>
-  <%= f.label :title %>
 </div>
-<div>
-  <%= f.text_field :title %>
-</div>
-<div>
-  <%= f.label :content %>
-</div>
-<div>
-  <%= f.text_area :content, size: '19x5'%>
-</div>
-  <%= f.submit %>
-<% end %>
 
 

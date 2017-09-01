@@ -1,3 +1,34 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.edit-user-btn{
+	text-decoration: underline overline;
+	text-decoration-color: #990303;
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	color: white;
+	background: rgba(0,0,0,0)
+}
+
+.edit-user-btn:hover {
+	font-family: 'Cabin', sans-serif;
+	font-size: 25px;
+	color: white;
+	background:#990303
+}
+
+.post-font{
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    background: #990303;
+}
+
+.post-font:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.time-color{
+    color: rgb(59, 121, 186)
+}

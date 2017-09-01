@@ -1,12 +1,32 @@
 <div class='post-show-div text-center'>
     <h3><%=@user.username%>'s Profile</h3>
+    <%if @user.profile_pic_url == nil%>
+        <%=image_tag 'https://media.giphy.com/media/p32uriSNgeZxu/giphy.gif', size: '250x250'%>
+    <%else%>
+         <%=image_tag @user.profile_pic_url, size: '250x250'%>
+    <%end%>
     <h6>Joined at <%=@user.created_at%></h6>
-   
+    <h6>Email: <%=@user.email%></h6>
+    <%=link_to edit_user_registration_path do%>
+     <button class='btn edit-user-btn'>Edit Profile</button>
+    <%end%>
+
+</div>
+
+
+<div class='city-user-post'>
     <%@user_posts.each do |post| %>
-        <%= @cities.find(post.city_id).name.split.map(&:capitalize).join(' ')%>
-        <h3> <%=post.title%> </h3>
-        <h4><%=post.content%> </h4>
+        <div class = 'post-div'>
+            
+            <h3> <%=post.title%> </h3>
+            <h4>City: <%= @cities.find(post.city_id).name.split.map(&:capitalize).join(' ')%></h4>
+            <h6><%=post.content%> </h6>
+        </div>
 
     <%end%>
 </div>
-     
+
+
+
+
+  

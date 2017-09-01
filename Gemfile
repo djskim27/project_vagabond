@@ -54,10 +54,10 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass'
-gem 'bootswatch-rails'
+gem 'autoprefixer-rails'
 gem 'devise'
 gem 'friendly_id'
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'cancancan'
-
+gem 'font-awesome-sass'

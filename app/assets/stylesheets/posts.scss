@@ -1,3 +1,17 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.post-show-div{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+ }
+
+ .new-post {
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+    background: #990303;
+    border-radius: 5px;
+ }

@@ -14,51 +14,24 @@
  *= require_tree .
  */
  
+ body {
+     background: #262525;
+ }
+
+ .brand-font {
+    font-family: 'Indie Flower', cursive;
+ }
  
-
- .city-container {
-     display: flex;
-     justify-content: center;
- }
- .city-show-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.post-div {
-    display: flex;
-    flex-direction: column;
-}
-.post-show-div{
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-}
- .city {
-     display: inline-block;
-     margin: 0 20px 0 20px;
-    
+ .front-page-font {
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px 7px black;
  }
 
-.city-image-div {
-    height: 250px;
-
-}
-.city-user-post {
-    display: flex;
-
-}
- .post-div {
-     display: flex;
-     justify-content: center;
-     margin: 10px;
+ .default-font {
+    font-family: 'Cabin', sans-serif;
  }
-
- .post-user {
-     margin: 10px;
-     text-align: center;
- }
+ 
 
 #custom-navbar {
      background: rgba(30, 29, 29, 0.80);
@@ -84,4 +57,25 @@
     
      
  }
+
+.hover-nav:hover{
+    text-decoration: line-through;
+    text-decoration-color:#3D3C3C;
+    
+    
+}
+
+.form-font {
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+.entire-post {
+    border-top: 3px solid #990303;
+    
+}
+
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ 
 

@@ -1,3 +1,86 @@
-// Place all the styles related to the Cities controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.city-title {
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+	background: rgba(0, 0, 0, 0.3);
+	display: inline;
+}
+
+
+
+.featured-city {
+	font-family: 'Cabin', sans-serif;
+	font-size: 30px;
+	color: white;
+	
+}
+
+.link-text {
+	text-decoration: underline overline;
+	text-decoration-color: #990303;
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	color: white;
+	background: rgba(0,0,0,0)
+}
+
+.link-text:hover {
+	font-family: 'Cabin', sans-serif;
+	font-size: 25px;
+	color: white;
+	background:#990303
+}
+
+.globe {
+	color: #990303
+}
+
+.globe:hover {
+	color: rgb(0, 125, 255);
+	background: #32AF32;
+	border-radius: 100%;
+}
+
+.city-container {
+	display: flex;
+	justify-content: center;
+}
+.city-show-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.post-div {
+   display: flex;
+   flex-direction: column;
+}
+
+.city {
+	display: inline-block;
+	margin: 0 20px 0 20px;
+   
+}
+
+.city-image-div {
+   height: 250px;
+
+}
+.city-user-post {
+   display: flex;
+   color: white;
+
+}
+
+.post-div {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.post-user {
+	margin: 10px;
+	text-align: center;
+}
+
+

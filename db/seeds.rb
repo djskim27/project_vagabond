@@ -10,11 +10,11 @@ User.destroy_all
 
 
 
-atlanta = City.create(name: 'atlanta', country: "United States", img_url: "http://i.imgur.com/Q0K2rZq.png")
-sanfrancisco = City.create(name: 'san francisco', country: "United States", img_url: "http://i.imgur.com/vmYvcZs.png")
-london = City.create(name: 'london', country: "United Kingdom", img_url: "https://www.bestwestern.co.uk/images/default-source/Breaks/london-city-breaks-headerabb13b7b8ce469abb38eff010092c40e.jpg?sfvrsn=0")
-losangeles = City.create(name: 'los angeles', country: "United States", img_url: "http://i.imgur.com/MEh5yqR.png")
-sydney = City.create(name: 'sydney', country: "Australia", img_url: "http://www.remotetraveler.com/wp-content/gallery/sydney-harbour-bridge/Sydney-Harbour-Bridge-in-the-background.jpg")
+atlanta = City.create(name: 'atlanta', country: "United States", img_url: "http://i.imgur.com/7MjzoVY.jpg?1")
+sanfrancisco = City.create(name: 'san francisco', country: "United States", img_url: "http://i.imgur.com/6klIdGQ.jpg?1")
+london = City.create(name: 'london', country: "United Kingdom", img_url: "http://i.imgur.com/rvMchBY.jpg")
+losangeles = City.create(name: 'los angeles', country: "United States", img_url: "http://i.imgur.com/9A83klc.jpg?1")
+sydney = City.create(name: 'sydney', country: "Australia", img_url: "http://i.imgur.com/KTSo2w5.jpg?1")
 
 
 

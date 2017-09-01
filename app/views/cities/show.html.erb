@@ -1,29 +1,44 @@
 
+<div class="carousel-inner">
+        <div class='carousel-item active'>
+                <%= image_tag(@city.img_url, class: '#d-block w-100') %>
+                <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-shadow city-title"><%= @city.name.split.map(&:capitalize).join(' ')%></h2>
+        </div>
+</div>
 
+<br/>
 
-<%= image_tag @city.img_url, style: 'width: 100%'%>
-<h1 class='city-show-name text-center'><%= @city.name.split.map(&:capitalize).join(' ')%></h1>
 <div class='city-show-container'>
-<div>
-<h3 class='text-center'>Posts <%=link_to '(+)', new_city_post_path(@city)%><h3>
-</div>
-<div class='city-user-post'>
-<% @city_posts.each do |post| %>
-        <div class = 'post-user'>
-        <%= @user.email%>
+        <div>
+                <%=link_to new_city_post_path(@city) do%>
+                        <%=button_tag 'Add New Post', class:'btn link-text'%>
+                <%end%>
         </div>
 
-        <div class = 'post-div'>
+
+<% @city_posts.each do |post| %>
+        <div class='entire-post'>
+                <div class='city-user-post'>
+                        <div class = 'post-user'>
+                                <div>
+                                        <%=image_tag @user.profile_pic_url, size: '60x60'%>
+                                </div>
+                                        <%= @user.username%>
+                        </div>
+
+                        <div class = 'post-div'>
+                        
+                                <h4><%=link_to post.title, city_post_path(@city, post), class:'post-font'%></h4>
+                                <h6 class='time-color'><%=distance_of_time_in_words(post.created_at, Time.now)%> ago</h6>
+                                <h6><%=truncate(post.content, length: 50)%> <%=link_to "Read More", city_post_path(@city, post), class:'time-color'%></h6>
         
-        <h4><%=link_to post.title, city_post_path(@city, post)%></h4>
-        <h6><%=distance_of_time_in_words(post.created_at, Time.now)%> ago</h6>
-       <h6><%=truncate(post.content, length: 50)%> <%=link_to "Read More", city_post_path(@city, post)%></h6>
-       
+                        </div>
+                </div>
+        
         </div>
-        
-        
 <%end%>
-</div>
+        
 <%= will_paginate @city_posts %>
 
 </div>

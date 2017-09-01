@@ -1,11 +1,11 @@
-<div class='form-container'>
+<div class='form-container form-font'>
     <div>
-        <h2>Edit Post</h2>
+        <h2 class='text-center'>Edit Post</h2>
 
         <%= render "partials/form"%>
 
         <%= form_for [@city, @post], method: :delete do |f|%>
-        <%= f.submit "Delete", class: "delete", data: {confirm: "Are you sure?"} %>
+        <%= f.submit "Delete", class: "delete btn link-text", data: {confirm: "Are you sure?"} %>
         <% end %>
     </div>
 </div>
