@@ -3,7 +3,7 @@
         <div class='post-show-div text-center'>
             <h3><%=@user.username%>'s Profile</h3>
             <%if @user.profile_pic_url == nil%>
-                <%=image_tag 'https://media.giphy.com/media/p32uriSNgeZxu/giphy.gif', size: '250x250'%>
+                <%=image_tag 'https://media.giphy.com/media/p32uriSNgeZxu/giphy.gif', size: '250x250', class:'profile-pic'%>
             <%else%>
                 <%=image_tag @user.profile_pic_url, size: '250x250'%>
             <%end%>

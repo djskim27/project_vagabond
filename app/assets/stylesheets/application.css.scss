@@ -94,6 +94,35 @@
     }
  }
 
+ .map {
+    display: flex;
+	justify-content: center;
+ }
+
+ .map img {
+
+        width: 30px;
+        height: 30px;
+        border-radius: 150px;
+        box-shadow: 2px 2px 5px #990303;
+    
+     
+ }
+
+ .map img:hover {
+
+        width: 400px;
+        height: 200px;
+        border-radius: 150px;
+   
+    
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
  @import "font-awesome-sprockets";
  @import "font-awesome";
  

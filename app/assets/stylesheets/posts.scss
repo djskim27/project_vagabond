@@ -2,14 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .post-show-container {
-    display: flex
+    display: flex;
+    justify-content: center;
+
 }
 .post-show-div{
     margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: white;
+    background: #4F4D4D;
+    width: 100%;
  }
 
  .new-post {
@@ -19,3 +20,74 @@
     background: #990303;
     border-radius: 5px;
  }
+
+ .master-container {
+    margin-top: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    color: white;
+    background: rgba(205, 202, 202, 0.90);
+    padding: -10px;
+    border: 5px solid #990303;
+    border-radius: 10px
+ 
+}
+
+.show-username {
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+    background:#990303; 
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px black;
+
+
+}
+
+.shadow {
+    border-radius: 5px;
+    border:2px solid #fff;
+    background: url(img/tiger.png) no-repeat;
+    box-shadow: 10px 10px 5px #171616;
+    -moz-box-shadow: 10px 10px 5px #171616;
+    -webkit-box-shadow: 10px 10px 5px #171616;
+    -khtml-box-shadow: 10px 10px 5px #171616;
+
+}
+
+.post-div {
+	display: flex;
+	justify-content: center;
+	padding:30px;
+}
+
+.post-user {
+	margin: 10px;
+	text-align: center;
+}
+
+.post-show-title {
+    font-family: 'Indie Flower', cursive;
+    color: #990303; 
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: #990303; 
+    text-shadow: 1px 1px 4px black;
+
+}
+
+.post-show-time {
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+}
+
+.post-show-content {
+    font-family: 'Cabin', sans-serif;
+    font-size: 23px;
+    color: black;
+    
+}
