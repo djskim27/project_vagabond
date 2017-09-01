@@ -60,4 +60,5 @@ gem 'friendly_id'
 gem 'jquery-rails'
 gem 'will_paginate'
 gem 'cancancan'
+gem 'geocoder'
 

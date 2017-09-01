@@ -1,6 +1,13 @@
 <div>
 <%=image_tag 'http://i.imgur.com/Lbifw1P.png', :style => "width: 100%"%>
 </div>
+<div>
+<% my_url = "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=1" %>
+<% @cities.each do |location| %> 
+    <% my_url += "&markers=#{location.latitude}%2C#{location.longitude}" %>    
+<% end %>
+<%= image_tag my_url %>
+</div>
 <div class='text-center'>
     <h3>Cities</h3>
 </div>
