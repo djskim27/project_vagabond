@@ -21,7 +21,7 @@
         <% @cities.each_with_index do |city, index| %>
             <%= content_tag :div, class: 'carousel-item'  do %>
                 <%= link_to city_path(city) do %>
-                    <%= image_tag(city.img_url, class: '#d-block w-100') %>
+                     <%= image_tag(city.img_url, class: '#d-block w-100') %>
                 <% end %>
                 <%= content_tag :div, class: "carousel-caption d-none d-md-block" do %>
                     <h1 class='city-title'><%=city.name.split.map(&:capitalize).join(' ') %></h1>
@@ -60,7 +60,7 @@
 <br/>
 <div class='city-container'>
     <% @cities.each do |city| %>
-        <div class='d-flex justify-content-center'>
+        <div>
             <%=link_to city_path(city) do%>
             <%=button_tag city.name.split.map(&:capitalize).join(' '), class:'btn custom-btn link-text'%>
             <%end%>

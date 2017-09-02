@@ -65,33 +65,7 @@
 }
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 780px) { 
-    .front-page-font {
-        font-family: 'Indie Flower', cursive;
-        font-size: 10px;
-        text-shadow: 2px 2px 7px black;
-     }
 
-     .navbar {
-         width: 100%;
-     }
-
-     .link-text {
-        text-decoration: underline overline;
-        text-decoration-color: #990303;
-        font-family: 'Cabin', sans-serif;
-        font-size: 20px;
-        color: white;
-        background: rgba(0,0,0,0);
-        display: block;
-    }
-    
-    .link-text:hover {
-        font-family: 'Cabin', sans-serif;
-        font-size: 25px;
-        color: white;
-        background:#990303;
-        display: block;
-    }
  }
 
  .map {
@@ -128,5 +102,5 @@
 }
  @import "font-awesome-sprockets";
  @import "font-awesome";
- 
+
 
