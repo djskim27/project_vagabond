@@ -1,7 +1,7 @@
 <div class='d-flex justify-content-center'>
     
         <div class=' master-container'>
-               <h2 class='show-username d-inline'><%=@users.find(@post.user_id).username%></h2>
+               <h2 class='show-username d-inline'>Posted by: <%=@users.find(@post.user_id).username%> || <%=distance_of_time_in_words(@post.created_at, Time.now)%> ago</h2>
             <div class = 'post-user d-flex justify-content-between'>
                    
                 <div>
@@ -14,11 +14,15 @@
                             
             <div class = 'post-div'>
                 <h3 class= 'post-show-title'><%=@post.title%></h3>
-                <h6 class='post-show-time'><%=distance_of_time_in_words(@post.created_at, Time.now)%> ago</h6>
                 <p class='post-show-content'><%=@post.content%></p>
             </div>
             </div>
+             <%=link_to :back do%>
+                        <%=button_tag 'Back To Post Index', class:'btn link-text'%>
+        <%end%>
         </div>
+       
+        
     
 </div>
 
