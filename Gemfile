@@ -62,3 +62,5 @@ gem 'will_paginate'
 gem 'cancancan'
 gem 'font-awesome-sass'
 gem 'geocoder'
+gem 'tunemygc'
+
